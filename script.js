@@ -2,7 +2,7 @@ let dicionario = [];
 
 async function carregarDicionario() {
   try {
-    const resp = await fetch('proverbios_ditados.json');
+    const resp = await fetch('coletanea_proverbios.json');
     dicionario = await resp.json();
   } catch (erro) {
     console.error("Erro ao carregar o dicionário:", erro);
