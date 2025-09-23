@@ -21,7 +21,7 @@ function pesquisar(termo) {
   resultados.forEach(item => {
     const div = document.createElement('div');
     div.className = 'entry';
-    div.innerHTML = `<h2>${item.Palavra}</h2>`; // 🔥 só mostra a palavra
+    div.innerHTML = `<p>${item.Palavra}</p>`; // agora usa <p> em vez de <h2>
     resultsDiv.appendChild(div);
   });
 }
